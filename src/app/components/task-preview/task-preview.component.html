@@ -1,0 +1,16 @@
+<div class="task-preview">
+    <h2 mat-dialog-title>Task Details</h2>
+    <div mat-dialog-content>
+    <p><strong>Title:</strong> {{ task.title }}</p>
+    <p><strong>Description:</strong> {{ task.description }}</p>
+    <p><strong>Status:</strong> {{ task.status }}</p>
+    <p><strong>Priority:</strong> 
+        <span [ngClass]="task.priority.toLowerCase()">{{ task.priority }}</span>
+    </p>
+    <p><strong>Start Date:</strong> {{ formatDate(task.timeline.startDate) }}</p>
+    <p><strong>End Date:</strong> {{ formatDate(task.timeline.endDate) }}</p>
+    </div>
+    <div mat-dialog-actions>
+    <button mat-button (click)="close()">Close</button>
+    </div>
+</div>

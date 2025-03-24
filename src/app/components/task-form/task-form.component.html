@@ -1,0 +1,33 @@
+<div class="overlay">
+  <div class="container">
+      <div class="title">
+          <h2>Create New Task</h2>
+          <span (click)="close()">❌</span>
+      </div>
+
+      <div class="task-info">
+          <h5>Task Info</h5>
+          <input class="title" placeholder="Task title" [(ngModel)]="newTask.title">
+          <textarea class="bio" placeholder="Write the description of the task..." [(ngModel)]="newTask.description"></textarea>
+      </div>
+
+      <div class="priority">
+          <select [(ngModel)]="newTask.priority">
+              <option>Low</option>
+              <option>Medium</option>
+              <option>High</option>
+              <option>Urgent</option>
+          </select>
+      </div>
+
+      <div class="timeline">
+          <h5>Set Timeline</h5>
+          <label for="fromDate">From</label>
+          <input type="date" id="fromDate" [(ngModel)]="taskFromDate" placeholder="06-04-1995">
+          <label for="toDate">To</label>
+          <input type="date" id="toDate" [(ngModel)]="taskToDate" placeholder="06-04-1995">
+      </div>
+
+      <button class="create-task-btn" (click)="createTask()">Create Task</button>
+  </div>
+</div>
