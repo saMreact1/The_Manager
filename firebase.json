@@ -1,6 +1,6 @@
 {
     "hosting": {
-      "public": "dist/your-app-name",
+      "public": "dist/manager",
       "rewrites": [
         {
           "source": "**",
