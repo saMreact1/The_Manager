@@ -240,8 +240,8 @@ select {
         padding: 2px;
     }
     .actions button img, .actions button:nth-of-type(1) mat-icon {
-        width: 17px;
-        height: 17px;
-        font-size: 17px;
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
     }
 }
