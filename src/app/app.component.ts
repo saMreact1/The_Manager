@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Manager';
+  // isSignup: boolean = false;
+
+  // toggleForm(): void {
+  //   this.isSignup = !this.isSignup;
+  // }
 }

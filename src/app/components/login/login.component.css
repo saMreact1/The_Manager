@@ -1,0 +1,157 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../../assets/bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-content {
+  text-align: center;
+  background-color: #ffffff3a;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  transition: all 0.5s ease-in-out;
+  /* border: 1px solid #534c4c; */
+}
+
+h2 {
+  font-size: 24px;
+  font-family:cursive;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  border-color: #41b1ca;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+  
+.toggle-button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  text-decoration: none;
+}
+.toggle-button:hover {
+  font-size: 18px;
+}
+
+.signup {
+  margin-top: 10px;
+}
+
+.forgot-password {
+  color: #fff;
+  font-style: italic;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.forgot-password:hover {
+  font-size: 17px;
+}
+
+.google-signin {
+  background-color: #fff;
+  padding: 5px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.google-signin img {
+  width: 30px;
+  margin-right: 5px;
+}
+.google-signin a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+
+/* MOBILE RESPONSIVENESS */
+/* MOBILE RESPONSIVENESS */
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 445px) {
+  .form-content {
+    width: 330px;
+  }
+
+  .toggle-button {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-content {
+    width: 300px;
+    padding: 23px;
+  }
+
+  .input-group {
+    margin-bottom: 10px;
+  }
+  input {
+    padding: 9px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+  .toggle-button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  .google-signin {
+    padding: 2px;
+    font-size: 14px;
+  }
+}

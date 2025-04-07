@@ -1,0 +1,23 @@
+<div class="main-container">
+  <div class="form-content">
+    <h2>Sign Up</h2>
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </div>
+    <form>
+      <div class="input-group">
+        <input type="email" placeholder="Email" name="email" [(ngModel)]="email" required>
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Password" name="password" [(ngModel)]="password" required>
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Confirm Password" name="confirmPassword" [(ngModel)]="confirmPassword">
+      </div>
+      <button type="button" class="submit-btn" (click)="signup()">Sign Up</button>
+    </form>
+  </div>
+  <button class="toggle-button" (click)="toggleForm()">
+    {{ isSignup ? 'Already have an account? Login' : 'Don\'t have an account? Sign Up' }}
+  </button>
+</div>

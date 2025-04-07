@@ -7,3 +7,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+/* @media screen and (max-width: 450px) {
+    ::ng-deep .mat-mdc-icon-button.mat-mdc-button-base {
+        --mdc-icon-button-state-layer-size: 40px;
+        width: var(--mdc-icon-button-state-layer-size);
+        height: var(--mdc-icon-button-state-layer-size);
+        padding: 8px;
+    }
+} */

@@ -20,6 +20,12 @@ import { TaskPreviewComponent } from './components/task-preview/task-preview.com
 import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { DeleteConfirmationComponent } from './components/delete-confirmation/delete-confirmation.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +33,11 @@ import { DeleteConfirmationComponent } from './components/delete-confirmation/de
     TaskFormComponent,
     TaskListComponent,
     TaskPreviewComponent,
-    DeleteConfirmationComponent
+    DeleteConfirmationComponent,
+    LoginComponent,
+    SignupComponent,
+    ForgotPasswordComponent,
+    VerifyEmailComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +53,8 @@ import { DeleteConfirmationComponent } from './components/delete-confirmation/de
     MatRadioModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [
     provideAnimationsAsync()

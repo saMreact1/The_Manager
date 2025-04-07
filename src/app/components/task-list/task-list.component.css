@@ -113,6 +113,9 @@ td p {
     padding: 8px 10px;
     border-radius: 5px;
 }
+.priority p {
+    margin-bottom: 0;
+}
 
 .status {
     cursor: pointer;
@@ -212,5 +215,33 @@ select {
 
     .container {
         width: 90%;
+    }
+
+    /* .actions button ::ng-deep .mat-mdc-icon-button.mat-mdc-button-base {
+        width: 40px;
+        padding: 8px;
+    } */
+    .actions ::ng-deep .mat-mdc-icon-button.mat-mdc-button-base {
+        --mdc-icon-button-state-layer-size: 40px;
+        width: var(--mdc-icon-button-state-layer-size);
+        height: var(--mdc-icon-button-state-layer-size);
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .actions {
+        margin-top: 10px;
+    }
+    .actions ::ng-deep .mat-mdc-icon-button.mat-mdc-button-base {
+        --mdc-icon-button-state-layer-size: 30px;
+        /* width: 15px; */
+        /* height: 15px; */
+        padding: 2px;
+    }
+    .actions button img, .actions button:nth-of-type(1) mat-icon {
+        width: 17px;
+        height: 17px;
+        font-size: 18px;
     }
 }
