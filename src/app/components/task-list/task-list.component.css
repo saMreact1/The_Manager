@@ -242,6 +242,6 @@ select {
     .actions button img, .actions button:nth-of-type(1) mat-icon {
         width: 17px;
         height: 17px;
-        font-size: 18px;
+        font-size: 17px;
     }
 }
