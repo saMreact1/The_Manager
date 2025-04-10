@@ -12,7 +12,6 @@
               <thead>
                   <tr>
                       <th>Tasks</th>
-                      <!-- <th>Description</th> -->
                       <th>Status</th>
                       <th>Priority</th>
                       <th></th>
@@ -47,5 +46,4 @@
   </div>
 
   <app-task-form *ngIf="showTaskForm" (closeForm)="showTaskForm = false" (taskCreated)="addTask($event)"></app-task-form>
-  <!-- <app-task-preview *ngIf="showTaskPreview" (closeForm)="showTaskPreview = false" [task]="selectedTask"></app-task-preview> -->
 </main>

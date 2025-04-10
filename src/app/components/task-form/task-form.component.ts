@@ -5,6 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
+  standalone: false,
   selector: 'app-task-form',
   templateUrl: './task-form.component.html',
   styleUrl: './task-form.component.css'

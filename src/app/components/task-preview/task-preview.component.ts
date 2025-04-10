@@ -3,6 +3,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Task } from '../../models/task.model';
 
 @Component({
+  standalone: false,
   selector: 'app-task-preview',
   templateUrl: './task-preview.component.html',
   styleUrl: './task-preview.component.css'

@@ -3,6 +3,7 @@ import { AuthService } from '../../services/shared/auth.service';
 import { Router } from '@angular/router';
 
 @Component({
+  standalone: false,
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
